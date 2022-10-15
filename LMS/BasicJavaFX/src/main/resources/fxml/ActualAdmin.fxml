@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.howardcc.cmsy167.exchange.actualAdminController">
+   <children>
+      <Button layoutX="216.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#addstaff" prefHeight="25.0" prefWidth="198.0" text="Add Staff" />
+      <Button layoutX="216.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changepassword" prefHeight="25.0" prefWidth="198.0" text="Change Password" />
+      <Button layoutX="217.0" layoutY="169.0" mnemonicParsing="false" onMouseClicked="#deletestaff" prefHeight="25.0" prefWidth="198.0" text="Delete Staff" />
+   </children>
+</AnchorPane>

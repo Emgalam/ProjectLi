@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.howardcc.cmsy167.exchange.adminController">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="400.0" prefWidth="125.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#EditBook" prefHeight="59.0" prefWidth="125.0" text="Edit Book" />
+            <Button mnemonicParsing="false" onMouseClicked="#RegisterStudent" prefHeight="65.0" prefWidth="125.0" text="Add Student" />
+            <Button mnemonicParsing="false" onMouseClicked="#DeleteBook" prefHeight="58.0" prefWidth="125.0" text="Delete Book" />
+            <Button mnemonicParsing="false" onMouseClicked="#AddBook" prefHeight="70.0" prefWidth="138.0" text="Add Book" />
+            <Button mnemonicParsing="false" onMouseClicked="#deleteStudent" prefHeight="74.0" prefWidth="125.0" text="Delete Student" />
+         </children>
+      </VBox>
+      <Button layoutX="532.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#Logout" text="Logout" />
+      <TableView fx:id="BooksTable" layoutX="123.0" layoutY="50.0" prefHeight="272.0" prefWidth="477.0">
+         <columns>
+            <TableColumn fx:id="BookID" prefWidth="59.0" text="Book ID" />
+            <TableColumn fx:id="BookName" prefWidth="151.0" text="Book Name" />
+            <TableColumn fx:id="PublishedBy" prefWidth="177.0" text="Published By" />
+            <TableColumn fx:id="Status" prefWidth="89.0" text="Status" />
+         </columns>
+      </TableView>
+      <TextField fx:id="Searchbar" alignment="TOP_CENTER" layoutX="175.0" layoutY="14.0" prefHeight="25.0" prefWidth="308.0" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0 0 2px 0;">
+         <font>
+            <Font name="Times New Roman Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Button layoutX="504.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#Find" text="find" />
+   </children>
+</AnchorPane>

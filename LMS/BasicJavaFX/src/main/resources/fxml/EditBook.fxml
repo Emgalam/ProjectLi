@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.howardcc.cmsy167.exchange.editbookController">
+   <children>
+      <Text layoutX="250.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Book Panel">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="bookid" layoutX="226.0" layoutY="114.0" promptText="BookID" />
+      <TextField fx:id="bookname" layoutX="226.0" layoutY="166.0" promptText="Book name" />
+      <TextField fx:id="publisher" layoutX="226.0" layoutY="217.0" promptText="Publisher" />
+      <Button layoutX="278.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#update" text="Done" />
+      <Button layoutX="56.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#goBack" text="Back" />
+   </children>
+</AnchorPane>

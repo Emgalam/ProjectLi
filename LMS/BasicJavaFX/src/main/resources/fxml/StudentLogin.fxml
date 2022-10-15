@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.howardcc.cmsy167.exchange.studentprofController">
+   <children>
+      <TableView fx:id="BooksTable" layoutX="123.0" layoutY="64.0" prefHeight="272.0" prefWidth="477.0">
+         <columns>
+            <TableColumn fx:id="BookID" prefWidth="59.0" text="Book ID" />
+            <TableColumn fx:id="BookName" prefWidth="151.0" text="Book Name" />
+            <TableColumn fx:id="PublishedBy" prefWidth="177.0" text="Published By" />
+            <TableColumn fx:id="Status" prefWidth="89.0" text="Issue Status" />
+         </columns>
+      </TableView>
+      <TextField fx:id="Searchbar" alignment="TOP_CENTER" layoutX="185.0" layoutY="24.0" prefHeight="25.0" prefWidth="308.0" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0 0 2px 0;">
+         <font>
+            <Font name="Times New Roman Italic" size="12.0" />
+         </font>
+      </TextField>
+      <VBox layoutY="137.0" prefHeight="162.0" prefWidth="123.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#Reserve" prefHeight="44.0" prefWidth="123.0" text="Reserve Book" />
+            <Button mnemonicParsing="false" onMouseClicked="#returnbook" prefHeight="54.0" prefWidth="123.0" text="Return Book" />
+         </children>
+      </VBox>
+      <Button layoutX="504.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#tomain" text="Logout" />
+      <Button layoutX="505.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#viewBook" text="Search" />
+   </children>
+</AnchorPane>
